@@ -1,0 +1,79 @@
+/* Page Header Override */
+.page-header {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-display);
+}
+
+.page-subtitle {
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+
+/* Filter Tabs */
+.events-filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filter-tab {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.filter-tab:hover {
+  background-color: var(--gray-200);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .filter-tab:hover {
+  background-color: var(--gray-700);
+}
+
+.filter-tab.active {
+  background-color: var(--primary-600);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  margin-top: 2rem;
+}
+
+.empty-state i {
+  width: 4rem;
+  height: 4rem;
+  color: var(--gray-400);
+  margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký | School Clubs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <nav class="navbar scrolled" id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <img
+                src="img/logo.png"
+                alt="School Clubs Logo"
+                class="logo-img"
+              />
+            </div>
+            <span class="logo-text">admin HV.Tài</span>
+          </a>
+          <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Trang chủ</a>
+            <a href="clubs.html" class="nav-link">Câu Lạc Bộ</a>
+            <a href="events.html" class="nav-link">Sự kiện</a>
+            <a href="register.html" class="nav-link active">Đăng ký</a>
+            <a href="about.html" class="nav-link">Về chúng tôi</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i data-lucide="moon" class="theme-icon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-header">
+      <div class="container">
+        <i
+          data-lucide="user-plus"
+          style="width: 4rem; height: 4rem; margin: 0 auto 1rem"
+        ></i>
+        <h1 class="page-title">Đăng Ký Tham Gia</h1>
+        <p class="page-subtitle">
+          Điền thông tin để tham gia câu lạc bộ yêu thích của bạn
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width: 48rem">
+        <div id="successMessage" class="success-message" style="display: none">
+          <div class="success-icon"><i data-lucide="check-circle"></i></div>
+          <h2>Đăng ký thành công!</h2>
+          <p>
+            Cảm ơn bạn đã đăng ký. Chúng tôi sẽ gửi email xác nhận và thông tin
+            chi tiết đến bạn trong vòng 24 giờ.
+          </p>
+          <div class="success-note">
+            💡 <strong>Lưu ý:</strong> Vui lòng kiểm tra hộp thư đến (và cả thư
+            rác) để không bỏ lỡ email từ chúng tôi.
+          </div>
+        </div>
+
+        <form
+          id="registerForm"
+          class="register-form card"
+          style="padding: 2rem"
+        >
+          <!-- Personal Info -->
+          <div class="form-section">
+            <h3>Thông tin cá nhân</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Họ và tên <span class="required">*</span></label>
+                <input type="text" name="fullName" required minlength="3" />
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label>Ngày sinh <span class="required">*</span></label>
+                <input type="date" name="birthDate" required />
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label>Email <span class="required">*</span></label>
+                <input type="email" name="email" required />
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label>Số điện thoại <span class="required">*</span></label>
+                <input type="tel" name="phone" required pattern="[0-9]{10}" />
+                <span class="error-message"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Info -->
+          <div class="form-section">
+            <h3>Thông tin học sinh</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Lớp <span class="required">*</span></label>
+                <input type="text" name="class" required />
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label>Mã số học sinh</label>
+                <input type="text" name="studentId" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Club Selection -->
+          <div class="form-section">
+            <h3>Chọn câu lạc bộ</h3>
+            <div class="form-group">
+              <label
+                >Câu lạc bộ muốn tham gia <span class="required">*</span></label
+              >
+              <select name="club" required id="clubSelect">
+                <option value="">-- Chọn câu lạc bộ --</option>
+              </select>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label>Kinh nghiệm/Kỹ năng liên quan</label>
+              <textarea name="experience" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Lý do tham gia</label>
+              <textarea name="reason" rows="3"></textarea>
+            </div>
+          </div>
+
+          <!-- Terms -->
+          <div class="form-section">
+            <label class="checkbox-label">
+              <input type="checkbox" name="terms" required />
+              <span
+                >Tôi đồng ý với các điều khoản và điều kiện của câu lạc bộ và
+                cam kết tham gia đầy đủ các hoạt động.</span
+              >
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="width: 100%; font-size: 1.125rem; padding: 1rem"
+          >
+            Gửi đăng ký
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="padding: 2rem 0; text-align: center">
+          <p>© 2026 HV.Tài School Clubs. trang web được tạo bởi học sinh</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ | School Clubs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <img
+                src="img/logo.png"
+                alt="School Clubs Logo"
+                class="logo-img"
+              />
+            </div>
+            <span class="logo-text">admin HV.Tài</span>
+          </a>
+          <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Trang chủ</a>
+            <a href="clubs.html" class="nav-link">Câu Lạc Bộ</a>
+            <a href="events.html" class="nav-link">Sự kiện</a>
+            <a href="register.html" class="nav-link">Đăng ký</a>
+            <a href="about.html" class="nav-link">Về chúng tôi</a>
+            <a href="contact.html" class="nav-link active">Liên hệ</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i data-lucide="moon" class="theme-icon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Liên Hệ Với Tôi</h1>
+        <p class="page-subtitle">
+          Kết nối để giải đáp thắc mắc, đóng góp ý kiến hoặc hợp tác
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Info Card -->
+          <div class="card contact-info-card">
+            <div class="profile-section">
+              <div class="profile-image">
+                <img src="img/logo.png" alt="HV.Tài" />
+              </div>
+              <h3>HV.Tài</h3>
+              <p class="role">Admin & Developer</p>
+              <p class="bio">
+                Chào các bạn! Mình là Hứa Văn Tài, người quản lý và phát triển
+                website Câu Lạc Bộ Trường Học. Mình luôn sẵn sàng lắng nghe ý
+                kiến đóng góp của các bạn để xây dựng cộng đồng tốt hơn.
+              </p>
+            </div>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="icon-box"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <span class="label">Địa chỉ</span>
+                  <p>Trường THPT Lê Quý Đôn</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon-box"><i data-lucide="phone"></i></div>
+                <div>
+                  <span class="label">Điện thoại</span>
+                  <a href="tel:+84328737059">0328737059</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon-box"><i data-lucide="mail"></i></div>
+                <div>
+                  <span class="label">Email</span>
+                  <a href="mailto:taihuavan188@gmail.com"
+                    >taihuavan188@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="social-connect">
+              <h4>Kết nối mạng xã hội</h4>
+              <div class="social-buttons">
+                <a
+                  href="https://web.facebook.com/HV.Tai2k8/"
+                  target="_blank"
+                  class="social-btn facebook"
+                >
+                  <i data-lucide="facebook"></i> Facebook
+                </a>
+                <a
+                  href="https://www.youtube.com/@user-HVT"
+                  target="_blank"
+                  class="social-btn youtube"
+                >
+                  <i data-lucide="youtube"></i> Youtube
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Card -->
+          <div class="card contact-form-card">
+            <h2>Gửi tin nhắn</h2>
+            <p class="form-desc">
+              Điền thông tin bên dưới, mình sẽ phản hồi sớm nhất có thể.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Họ và tên</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Nhập tên của bạn"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Chủ đề</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Bạn cần hỗ trợ về việc gì?"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Nội dung</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Nhập nội dung tin nhắn..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i data-lucide="send"></i> Gửi tin nhắn
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="padding: 2rem 0; text-align: center">
+          <p>© 2026 HV.Tài School Clubs. trang web được tạo bởi học sinh</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/contact.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

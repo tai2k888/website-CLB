@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Về Chúng Tôi | School Clubs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <img
+                src="img/logo.png"
+                alt="School Clubs Logo"
+                class="logo-img"
+              />
+            </div>
+            <span class="logo-text">admin HV.Tài</span>
+          </a>
+          <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Trang chủ</a>
+            <a href="clubs.html" class="nav-link">Câu Lạc Bộ</a>
+            <a href="events.html" class="nav-link">Sự kiện</a>
+            <a href="register.html" class="nav-link">Đăng ký</a>
+            <a href="about.html" class="nav-link active">Về chúng tôi</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i data-lucide="moon" class="theme-icon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Về Chúng Tôi</h1>
+        <p class="page-subtitle">
+          Hành trình kết nối đam mê và xây dựng cộng đồng học sinh năng động
+        </p>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2 class="section-title" style="text-align: left">
+              Câu chuyện của chúng tôi
+            </h2>
+            <p>
+              Được thành lập với mục tiêu tạo ra một sân chơi bổ ích sau giờ
+              học, <strong>HV.Tài School Clubs</strong> là nơi quy tụ những học
+              sinh có cùng đam mê, sở thích để cùng nhau học hỏi và phát triển.
+            </p>
+            <div class="stats-row">
+              <div class="stat-item">
+                <span class="stat-num">1250+</span>
+                <span class="stat-lbl">Thành viên</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">6+</span>
+                <span class="stat-lbl">Câu lạc bộ</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">5</span>
+                <span class="stat-lbl">Năm hoạt động</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="img/event-tongket.jpg" alt="Hoạt động câu lạc bộ" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sứ Mệnh & Tầm Nhìn</h2>
+          <p class="section-subtitle">Giá trị cốt lõi mà chúng tôi hướng tới</p>
+        </div>
+        <div class="mission-grid">
+          <div class="card mission-card">
+            <div class="mission-icon"><i data-lucide="target"></i></div>
+            <h3>Sứ Mệnh</h3>
+            <p>
+              Tạo môi trường để mỗi học sinh đều có cơ hội khám phá tiềm năng
+              bản thân, rèn luyện kỹ năng mềm và tự tin tỏa sáng.
+            </p>
+          </div>
+          <div class="card mission-card">
+            <div class="mission-icon"><i data-lucide="eye"></i></div>
+            <h3>Tầm Nhìn</h3>
+            <p>
+              Trở thành mô hình hoạt động ngoại khóa kiểu mẫu, nơi học sinh
+              không chỉ học tập mà còn sống hết mình với đam mê.
+            </p>
+          </div>
+          <div class="card mission-card">
+            <div class="mission-icon"><i data-lucide="heart"></i></div>
+            <h3>Giá Trị</h3>
+            <p>
+              Đoàn kết - Sáng tạo - Trách nhiệm - Tôn trọng sự khác biệt là
+              những giá trị kim chỉ nam cho mọi hoạt động.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Đội Ngũ Phát Triển</h2>
+          <p class="section-subtitle">
+            Những người đứng sau vận hành website và các hoạt động
+          </p>
+        </div>
+        <div class="team-grid">
+          <!-- Admin Card -->
+          <div class="card team-card">
+            <div class="team-img">
+              <img src="img/logo.png" alt="HV.Tài" />
+            </div>
+            <div class="team-info">
+              <h3>HV.Tài</h3>
+              <span class="team-role">Admin & Lead Developer</span>
+              <p class="team-bio">
+                Người sáng lập và phát triển hệ thống website quản lý câu lạc
+                bộ. Đam mê công nghệ và các hoạt động cộng đồng.
+              </p>
+              <div class="team-social">
+                <a href="https://web.facebook.com/HV.Tai2k8/" target="_blank"
+                  ><i data-lucide="facebook"></i
+                ></a>
+                <a href="mailto:taihuavan188@gmail.com"
+                  ><i data-lucide="mail"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="padding: 2rem 0; text-align: center">
+          <p>© 2026 HV.Tài School Clubs. trang web được tạo bởi học sinh</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

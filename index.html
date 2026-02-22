@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Khám phá các câu lạc bộ đa dạng tại trường - Nghệ thuật, Thể thao và nhiều hoạt động thú vị khác"
+    />
+    <meta
+      name="keywords"
+      content="câu lạc bộ, học sinh, trường học, nghệ thuật, thể thao"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Câu Lạc Bộ Trường Học" />
+    <meta
+      property="og:description"
+      content="Khám phá các câu lạc bộ đa dạng tại trường"
+    />
+    <meta property="og:type" content="website" />
+
+    <title>Câu Lạc Bộ Trường Học | Trang Chủ</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <img
+                src="img/logo.png"
+                alt="School Clubs Logo"
+                class="logo-img"
+              />
+            </div>
+            <span class="logo-text">admin HV.Tài</span>
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link active">Trang chủ</a>
+            <a href="clubs.html" class="nav-link">Câu Lạc Bộ</a>
+            <a href="events.html" class="nav-link">Sự kiện</a>
+            <a href="register.html" class="nav-link">Đăng ký</a>
+            <a href="about.html" class="nav-link">Về chúng tôi</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+          </div>
+
+          <!-- Theme Toggle & Mobile Menu -->
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle theme"
+            >
+              <i data-lucide="moon" class="theme-icon"></i>
+            </button>
+            <button
+              class="mobile-menu-btn"
+              id="mobileMenuBtn"
+              aria-label="Toggle menu"
+            >
+              <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="floating-bubble bubble-1"></div>
+        <div class="floating-bubble bubble-2"></div>
+        <div class="floating-bubble bubble-3"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge fade-in">
+          <i data-lucide="sparkles"></i>
+          <span>Khai phá tiềm năng - Tỏa sáng đam mê</span>
+        </div>
+
+        <h1 class="hero-title slide-up">
+          Khám Phá Thế Giới<br />
+          <span class="highlight">Câu Lạc Bộ</span> Của Bạn
+        </h1>
+
+        <p class="hero-subtitle slide-up delay-1">
+          Nơi kết nối đam mê, phát triển tài năng và tạo dựng những kỷ niệm đẹp
+          nhất trong hành trình học vấn
+        </p>
+
+        <div class="hero-buttons slide-up delay-2">
+          <a href="clubs.html" class="btn btn-accent">
+            Khám phá CLB
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="register.html" class="btn btn-white"> Đăng ký ngay </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats slide-up delay-3">
+          <div class="stat-card">
+            <i data-lucide="users"></i>
+            <div class="stat-number">1250+</div>
+            <div class="stat-label">Thành viên</div>
+          </div>
+          <div class="stat-card">
+            <i data-lucide="calendar"></i>
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Sự kiện/năm</div>
+          </div>
+          <div class="stat-card">
+            <i data-lucide="trophy"></i>
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Giải thưởng</div>
+          </div>
+          <div class="stat-card">
+            <i data-lucide="sparkles"></i>
+            <div class="stat-number">6</div>
+            <div class="stat-label">Câu Lạc Bộ</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-mouse"></div>
+      </div>
+    </section>
+
+    <!-- Featured Clubs -->
+    <section class="section section-light" id="featured-clubs">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Câu Lạc Bộ Nổi Bật</h2>
+          <p class="section-subtitle">
+            Khám phá những câu lạc bộ được yêu thích nhất tại trường
+          </p>
+        </div>
+
+        <div class="club-grid" id="featuredClubsGrid">
+          <!-- Clubs will be loaded by JavaScript -->
+        </div>
+
+        <div class="section-footer">
+          <a href="clubs.html" class="btn btn-primary">Xem tất cả CLB</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sự Kiện Sắp Tới</h2>
+          <p class="section-subtitle">
+            Đừng bỏ lỡ những hoạt động thú vị trong thời gian tới
+          </p>
+        </div>
+
+        <div class="event-grid" id="upcomingEventsGrid">
+          <!-- Events will be loaded by JavaScript -->
+        </div>
+
+        <div class="section-footer">
+          <a href="events.html" class="btn btn-secondary">Xem tất cả sự kiện</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container cta-content">
+        <h2 class="cta-title">Sẵn sàng tham gia chưa?</h2>
+        <p class="cta-text">
+          Hãy đăng ký ngay để trở thành thành viên của các câu lạc bộ và bắt đầu
+          hành trình khám phá đam mê của bạn!
+        </p>
+        <a href="register.html" class="btn btn-white-large"
+          >Đăng ký tham gia ngay</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- About -->
+          <div class="footer-column">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <img
+                  src="img/logo.png"
+                  alt="School Clubs Logo"
+                  class="logo-img"
+                />
+              </div>
+              <span class="logo-text">School Clubs</span>
+            </div>
+            <p class="footer-desc">
+              Nơi kết nối đam mê, phát triển tài năng và tạo dựng kỷ niệm đẹp
+              cho học sinh.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://web.facebook.com/HV.Tai2k8/"
+                target="_blank"
+                class="social-link"
+                aria-label="Facebook"
+              >
+                <i data-lucide="facebook"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="social-link"
+                aria-label="TikTok"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 4h-3a4 4 0 0 0-4 4v10.08A4.99 4.99 0 0 0 12 20a5 5 0 1 0 5-5V4z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@user-HVT"
+                target="_blank"
+                class="social-link"
+                aria-label="Youtube"
+              >
+                <i data-lucide="youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h3 class="footer-title">Liên kết nhanh</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="clubs.html">Câu Lạc Bộ</a></li>
+              <li><a href="events.html">Sự kiện</a></li>
+              <li><a href="register.html">Đăng ký</a></li>
+              <li><a href="about.html">Về chúng tôi</a></li>
+            </ul>
+          </div>
+
+          <!-- Categories -->
+          <div class="footer-column">
+            <h3 class="footer-title">Danh mục</h3>
+            <ul class="footer-links">
+              <li><a href="clubs.html?category=arts">Nghệ thuật</a></li>
+              <li><a href="clubs.html?category=sports">Thể thao</a></li>
+              <li><a href="events.html">Sự kiện sắp tới</a></li>
+              <li><a href="about.html#team">Đội ngũ</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-column">
+            <h3 class="footer-title">Liên hệ</h3>
+            <ul class="footer-contact">
+              <li>
+                <i data-lucide="map-pin"></i>
+                <span>Trường THPT Lê Quý Đôn</span>
+              </li>
+              <li>
+                <i data-lucide="phone"></i>
+                <a href="tel:+84328737059">0328737059</a>
+              </li>
+              <li>
+                <i data-lucide="mail"></i>
+                <a href="mailto:taihuavan188@gmail.com"
+                  >taihuavan188@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 HV.Tài School Clubs. trang web được tạo bởi học sinh</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/home.js"></script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

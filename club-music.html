@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu Lạc Bộ Âm Nhạc | School Clubs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/club-detail.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <img
+                src="img/logo.png"
+                alt="School Clubs Logo"
+                class="logo-img"
+              />
+            </div>
+            <span class="logo-text">admin HV.Tài</span>
+          </a>
+          <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Trang chủ</a>
+            <a href="clubs.html" class="nav-link active">Câu Lạc Bộ</a>
+            <a href="events.html" class="nav-link">Sự kiện</a>
+            <a href="register.html" class="nav-link">Đăng ký</a>
+            <a href="about.html" class="nav-link">Về chúng tôi</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i data-lucide="moon" class="theme-icon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Club Header -->
+    <header class="club-header">
+      <div class="container">
+        <a href="clubs.html" class="back-link"
+          ><i data-lucide="arrow-left"></i> Quay lại danh sách</a
+        >
+        <div class="club-header-content">
+          <div class="club-badge">Nghệ Thuật</div>
+          <h1 class="club-title">Câu Lạc Bộ Âm Nhạc</h1>
+          <p class="club-subtitle">Nơi âm nhạc kết nối tâm hồn</p>
+        </div>
+      </div>
+      <div class="header-overlay"></div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section club-detail-section">
+      <div class="container">
+        <div class="club-detail-grid">
+          <div class="club-main-info">
+            <div class="detail-block">
+              <h2>Giới thiệu chung</h2>
+              <p>
+                CLB Âm Nhạc là nơi các bạn học sinh có đam mê với âm nhạc có thể
+                giao lưu, học hỏi và phát triển tài năng. Chúng tôi tổ chức các
+                buổi hòa nhạc, workshop và dự án sáng tác âm nhạc.
+              </p>
+            </div>
+            <div class="detail-block">
+              <h2>Hoạt động chính</h2>
+              <ul class="custom-list">
+                <li>Workshop âm nhạc hàng tháng</li>
+                <li>Luyện tập nhóm và solo</li>
+                <li>Tổ chức mini concert</li>
+                <li>Giao lưu với CLB âm nhạc các trường</li>
+              </ul>
+            </div>
+            <div class="detail-block">
+              <h2>Thành tích nổi bật</h2>
+              <ul class="achievement-list">
+                <li>Giải Nhất Hội diễn Văn nghệ Học sinh 2024</li>
+                <li>Top 3 cuộc thi Tài năng trẻ tỉnh</li>
+              </ul>
+            </div>
+            <div class="detail-block">
+              <h2>Tags</h2>
+              <div class="tags-container">
+                <span>Vocal</span><span>Nhạc cụ</span><span>Sáng tác</span
+                ><span>Biểu diễn</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="club-sidebar">
+            <div class="info-card">
+              <div class="club-img-wrapper">
+                <img src="img/music.jpg" alt="Câu Lạc Bộ Âm Nhạc" />
+              </div>
+              <div class="info-list">
+                <div class="info-item">
+                  <i data-lucide="user"></i>
+                  <div>
+                    <span class="label">Chủ nhiệm/Mentor</span
+                    ><strong>Thầy Nguyễn Văn A</strong>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="calendar"></i>
+                  <div>
+                    <span class="label">Lịch sinh hoạt</span
+                    ><strong>Thứ 3 & Thứ 6, 16:00 - 18:00</strong>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="map-pin"></i>
+                  <div>
+                    <span class="label">Địa điểm</span
+                    ><strong>Phòng Âm Nhạc</strong>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="users"></i>
+                  <div>
+                    <span class="label">Số lượng thành viên</span
+                    ><strong>10 thành viên</strong>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="mail"></i>
+                  <div>
+                    <span class="label">Liên hệ</span
+                    ><a href="mailto:taihuavan188@gmail.com"
+                      >taihuavan188@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <a
+                href="register.html?club=music"
+                class="btn btn-primary full-width"
+                >Đăng ký tham gia ngay</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <img src="img/logo.png" alt="Logo" class="logo-img" />
+              </div>
+              <span class="logo-text">admin HV.Tài</span>
+            </div>
+            <p class="footer-desc">
+              Nơi kết nối đam mê, phát triển tài năng và tạo dựng kỷ niệm đẹp
+              cho học sinh.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://web.facebook.com/HV.Tai2k8/"
+                target="_blank"
+                class="social-link"
+                ><i data-lucide="facebook"></i
+              ></a>
+              <a href="#" target="_blank" class="social-link"
+                ><i data-lucide="youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Liên hệ</h3>
+            <ul class="footer-contact">
+              <li>
+                <i data-lucide="map-pin"></i><span>Trường THPT Lê Quý Đôn</span>
+              </li>
+              <li>
+                <i data-lucide="phone"></i
+                ><a href="tel:+84328737059">0328737059</a>
+              </li>
+              <li>
+                <i data-lucide="mail"></i
+                ><a href="mailto:taihuavan188@gmail.com"
+                  >taihuavan188@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 HV.Tài School Clubs. trang web được tạo bởi học sinh</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

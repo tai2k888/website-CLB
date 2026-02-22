@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu Lạc Bộ | School Clubs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/clubs.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Same Navbar as index.html -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <img
+                src="img/logo.png"
+                alt="School Clubs Logo"
+                class="logo-img"
+              />
+            </div>
+            <span class="logo-text">admin HV.Tài</span>
+          </a>
+          <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Trang chủ</a>
+            <a href="clubs.html" class="nav-link active">Câu Lạc Bộ</a>
+            <a href="events.html" class="nav-link">Sự kiện</a>
+            <a href="register.html" class="nav-link">Đăng ký</a>
+            <a href="about.html" class="nav-link">Về chúng tôi</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i data-lucide="moon" class="theme-icon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Khám Phá Các Câu Lạc Bộ</h1>
+        <p class="page-subtitle">
+          Tìm câu lạc bộ phù hợp với đam mê và sở thích của bạn
+        </p>
+      </div>
+    </section>
+
+    <!-- Clubs Page -->
+    <section class="section">
+      <div class="container">
+        <!-- Filters -->
+        <div class="filter-panel">
+          <!-- Search -->
+          <div class="search-box">
+            <i data-lucide="search"></i>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Tìm kiếm câu lạc bộ..."
+            />
+          </div>
+
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <div class="filter-label">
+              <i data-lucide="filter"></i>
+              <span>Danh mục:</span>
+            </div>
+            <div class="filter-buttons" id="categoryFilter">
+              <button class="filter-btn active" data-category="all">
+                Tất cả
+              </button>
+              <button class="filter-btn arts" data-category="arts">
+                Nghệ Thuật
+              </button>
+              <button class="filter-btn sports" data-category="sports">
+                Thể Thao
+              </button>
+            </div>
+          </div>
+
+          <!-- Results Count -->
+          <div class="results-info" id="resultsInfo">
+            Tìm thấy <span id="resultsCount">6</span> câu lạc bộ
+          </div>
+        </div>
+
+        <!-- Clubs Grid -->
+        <div class="club-grid" id="clubsGrid">
+          <!-- Clubs will be loaded here -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState" style="display: none">
+          <i data-lucide="search"></i>
+          <h3>Không tìm thấy câu lạc bộ</h3>
+          <p>Thử điều chỉnh bộ lọc hoặc từ khóa tìm kiếm</p>
+          <button class="btn btn-primary" id="clearFilters">Xóa bộ lọc</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <img
+                  src="img/logo.png"
+                  alt="School Clubs Logo"
+                  class="logo-img"
+                />
+              </div>
+              <span class="logo-text">admin HV.Tài</span>
+            </div>
+            <p class="footer-desc">
+              Nơi kết nối đam mê, phát triển tài năng và tạo dựng kỷ niệm đẹp
+              cho học sinh.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://web.facebook.com/HV.Tai2k8/"
+                target="_blank"
+                class="social-link"
+                aria-label="Facebook"
+              >
+                <i data-lucide="facebook"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="social-link"
+                aria-label="TikTok"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 4h-3a4 4 0 0 0-4 4v10.08A4.99 4.99 0 0 0 12 20a5 5 0 1 0 5-5V4z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@user-HVT"
+                target="_blank"
+                class="social-link"
+                aria-label="Youtube"
+              >
+                <i data-lucide="youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Liên kết nhanh</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="clubs.html">Câu Lạc Bộ</a></li>
+              <li><a href="events.html">Sự kiện</a></li>
+              <li><a href="register.html">Đăng ký</a></li>
+              <li><a href="about.html">Về chúng tôi</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Danh mục</h3>
+            <ul class="footer-links">
+              <li><a href="clubs.html?category=arts">Nghệ thuật</a></li>
+              <li><a href="clubs.html?category=sports">Thể thao</a></li>
+              <li><a href="events.html">Sự kiện sắp tới</a></li>
+              <li><a href="about.html#team">Đội ngũ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Liên hệ</h3>
+            <ul class="footer-contact">
+              <li>
+                <i data-lucide="map-pin"></i>
+                <span>Trường THPT Lê Quý Đôn</span>
+              </li>
+              <li>
+                <i data-lucide="phone"></i>
+                <a href="tel:+84328737059">0328737059</a>
+              </li>
+              <li>
+                <i data-lucide="mail"></i>
+                <a href="mailto:taihuavan188@gmail.com"
+                  >taihuavan188@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 HV.Tài School Clubs. trang web được tạo bởi học sinh</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/clubs.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

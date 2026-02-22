@@ -1,0 +1,172 @@
+/* Clubs page specific styles */
+
+.page-header {
+    background: linear-gradient(135deg, var(--primary-600), var(--accent-teal));
+    padding: 8rem 0 5rem;
+    text-align: center;
+    color: white;
+}
+
+.page-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .page-title {
+        font-size: 3rem;
+    }
+}
+
+.page-subtitle {
+    font-size: 1.125rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+    .page-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+/* Filter Panel */
+.filter-panel {
+    background: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.search-box svg {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--gray-400);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: 1rem;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.filter-label svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    background: var(--gray-200);
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .filter-btn {
+    background: var(--gray-700);
+}
+
+.filter-btn:hover {
+    background: var(--gray-300);
+}
+
+[data-theme="dark"] .filter-btn:hover {
+    background: var(--gray-600);
+}
+
+.filter-btn.active {
+    background: var(--primary-600);
+    color: white;
+}
+
+.filter-btn.arts.active {
+    background: var(--arts-500);
+}
+
+.filter-btn.sports.active {
+    background: var(--sports-500);
+}
+
+.results-info {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resultsCount {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.empty-state svg {
+    width: 4rem;
+    height: 4rem;
+    color: var(--gray-400);
+    margin: 0 auto 1rem;
+}
+
+.empty-state h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}

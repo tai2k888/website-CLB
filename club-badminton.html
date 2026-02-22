@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu Lạc Bộ Cầu Lông | School Clubs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/club-detail.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo"
+            ><div class="logo-icon">
+              <img src="img/logo.png" alt="Logo" class="logo-img" />
+            </div>
+            <span class="logo-text">admin HV.Tài</span></a
+          >
+          <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link">Trang chủ</a>
+            <a href="clubs.html" class="nav-link active">Câu Lạc Bộ</a>
+            <a href="events.html" class="nav-link">Sự kiện</a>
+            <a href="register.html" class="nav-link">Đăng ký</a>
+            <a href="about.html" class="nav-link">Về chúng tôi</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i data-lucide="moon" class="theme-icon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <i data-lucide="menu" class="menu-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="club-header">
+      <div class="container">
+        <a href="clubs.html" class="back-link"
+          ><i data-lucide="arrow-left"></i> Quay lại danh sách</a
+        >
+        <div class="club-header-content">
+          <div class="club-badge">Thể Thao</div>
+          <h1 class="club-title">Câu Lạc Bộ Cầu Lông</h1>
+          <p class="club-subtitle">Nhanh nhẹn và chính xác</p>
+        </div>
+      </div>
+      <div class="header-overlay"></div>
+    </header>
+
+    <section class="section club-detail-section">
+      <div class="container">
+        <div class="club-detail-grid">
+          <div class="club-main-info">
+            <div class="detail-block">
+              <h2>Giới thiệu chung</h2>
+              <p>
+                CLB Cầu Lông giúp học sinh rèn luyện sức khỏe, nâng cao kỹ năng
+                chơi cầu lông từ cơ bản đến nâng cao. Không khí tập luyện thân
+                thiện, cởi mở.
+              </p>
+            </div>
+            <div class="detail-block">
+              <h2>Hoạt động chính</h2>
+              <ul class="custom-list">
+                <li>Luyện tập cơ bản và nâng cao</li>
+                <li>Sparring và thi đấu nội bộ</li>
+                <li>Workshop kỹ thuật</li>
+                <li>Giao lưu với CLB ngoài trường</li>
+              </ul>
+            </div>
+            <div class="detail-block">
+              <h2>Thành tích nổi bật</h2>
+              <ul class="achievement-list">
+                <li>Giải Ba đơn nam - Giải Cầu lông Học sinh 2024</li>
+                <li>Top 8 đồng đội toàn quốc</li>
+                <li>15 học sinh đạt huy chương cấp thành phố</li>
+              </ul>
+            </div>
+            <div class="detail-block">
+              <h2>Tags</h2>
+              <div class="tags-container">
+                <span>Đơn</span><span>Đôi</span><span>Kỹ thuật</span
+                ><span>Thể lực</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="club-sidebar">
+            <div class="info-card">
+              <div class="club-img-wrapper">
+                <img src="img/badminton.jpg" alt="CLB Cầu Lông" />
+              </div>
+              <div class="info-list">
+                <div class="info-item">
+                  <i data-lucide="user"></i>
+                  <div>
+                    <span class="label">Chủ nhiệm/Mentor</span
+                    ><strong>Cô Phạm Thị D</strong>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="calendar"></i>
+                  <div>
+                    <span class="label">Lịch sinh hoạt</span
+                    ><strong>Thứ 3, 5, 7: 16:00 - 18:00</strong>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="map-pin"></i>
+                  <div>
+                    <span class="label">Địa điểm</span
+                    ><strong>Nhà Đa Năng</strong>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="users"></i>
+                  <div>
+                    <span class="label">Số lượng thành viên</span
+                    ><strong>40 thành viên</strong>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="mail"></i>
+                  <div>
+                    <span class="label">Liên hệ</span
+                    ><a href="taihuavan188@gmail.com">taihuavan188@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="register.html?club=badminton"
+                class="btn btn-primary full-width"
+                >Đăng ký tham gia ngay</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>© 2026 HV.Tài School Clubs. trang web được tạo bởi học sinh</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
