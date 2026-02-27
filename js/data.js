@@ -145,7 +145,7 @@ const clubsData = [
     shortDesc: "Nơi hội tụ nhiều thành viên cho mọi đam mê",
     description:
       "CLB eSports tổ chức các hoạt động đa dạng: Liên Quân, Free Fire, PUBG mobile,... Phù hợp cho các bạn giải trí sau những giờ học căn thẳng.",
-    image: "img/esports.jpg",
+    image: "img/esports.png",
     schedule: "Chủ Nhật: 07:00 - 09:00 và 14:00 - 15:30",
     location: "Khu vự Giải Trí",
     members: 1000,
